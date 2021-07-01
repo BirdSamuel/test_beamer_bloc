@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     listener: (state, location) {
       print("BEAMER: Beaming to ${location.state.uri}");
     },
+    transitionDelegate: NoAnimationTransitionDelegate(),
     locationBuilder: BeamerLocationBuilder(
       beamLocations: [
         HomePageLocation(),
